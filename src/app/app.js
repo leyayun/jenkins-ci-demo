@@ -20,4 +20,3 @@ import home from './home';
 export default angular.module('app', [uirouter, home, consts, filters, services, directives])
   .config(config)
   .name;
-
