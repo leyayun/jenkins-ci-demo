@@ -1,11 +1,11 @@
 import routing from './routes';
-import HomeController from './controllers/HomeController';
-import ListController from './controllers/ListController';
-import DetailController from './controllers/DetailController';
+import HomeCtrl from './controllers/HomeCtrl';
+import ListCtrl from './controllers/ListCtrl';
+import DetailCtrl from './controllers/DetailCtrl';
 
 export default angular.module('app.home', [])
 	.config(routing)
-  .controller('HomeController', HomeController)
-  .controller('ListController', ListController)
-  .controller('DetailController', DetailController)
+  .controller('HomeCtrl', HomeCtrl)
+  .controller('ListCtrl', ListCtrl)
+  .controller('DetailCtrl', DetailCtrl)
   .name;
