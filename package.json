@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && webpack --bail --progress --profile",
-    "server": "webpack-dev-server --config webpack.config_pro --history-api-fallback --inline --progress",
+    "server": "webpack-dev-server --history-api-fallback --inline --progress",
     "start": "npm run server"
   },
   "repository": {
