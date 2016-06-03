@@ -1,0 +1,14 @@
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    帖子列表
+    <current-time class="pull-right"></current-time>
+  </a>
+  <a 
+    href="#" 
+    class="list-group-item"
+    ng-click="goDetail(topic)" 
+    ng-repeat="topic in list.TOPICS">
+    <span ng-bind="::topic.title"></span>
+    <p ng-bind="::topic.content"></p>
+  </a>
+</div>
