@@ -1,6 +1,6 @@
 export default class DetailCtrl {
   constructor($scope, TOPICS, $filter, $stateParams, user) {
-    // "ngInject";
+    "ngInject";
 
     $scope.topic = $filter('find')(TOPICS, Number($stateParams.id));
 
@@ -13,5 +13,3 @@ export default class DetailCtrl {
     this.loadMeizi();
   }
 }
-
-DetailCtrl.$inject = ['$scope', 'TOPICS', '$filter', '$stateParams', 'user'];

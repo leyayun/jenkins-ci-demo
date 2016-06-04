@@ -1,5 +1,5 @@
-currentTime.$inject = ['$interval'];
 export default function currentTime($interval) {
+	"ngInject";
   return {
     restrict: 'E',
     template: '<b>{{time | date: "yyyy-MM-dd HH:mm:ss"}}</b>',

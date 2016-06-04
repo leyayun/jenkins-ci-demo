@@ -1,6 +1,6 @@
 export default class ListCtrl {
   constructor($scope, $state, TOPICS) {
-    // "ngInject";
+    "ngInject";
 
     this.TOPICS = TOPICS;
 
@@ -9,5 +9,3 @@ export default class ListCtrl {
     };
   }
 }
-
-ListCtrl.$inject = ['$scope', '$state', 'TOPICS'];

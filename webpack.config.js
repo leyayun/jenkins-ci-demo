@@ -21,8 +21,6 @@ module.exports = function makeWebpackConfig () {
   /**
    * Entry
    * Reference: http://webpack.github.io/docs/configuration.html#entry
-   * Should be an empty object if it's generating a test build
-   * Karma will set this when it's a test build
    */
   config.entry = {
     app: './src/app/app.js'
@@ -31,8 +29,6 @@ module.exports = function makeWebpackConfig () {
   /**
    * Output
    * Reference: http://webpack.github.io/docs/configuration.html#output
-   * Should be an empty object if it's generating a test build
-   * Karma will handle setting it up for you when it's a test build
    */
   config.output = {
     // Absolute output directory
@@ -78,7 +74,7 @@ module.exports = function makeWebpackConfig () {
       // Transpile .js files using babel-loader
       // Compiles ES6 and ES7 into ES5 code
       test: /\.js$/,
-      loaders: ['babel', 'ng-annotate?map=true'],
+      loaders: isProd ? ['ng-annotate', 'babel'] : ['babel'],
       exclude: /node_modules/
     }, {
       // CSS LOADER

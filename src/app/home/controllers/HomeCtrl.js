@@ -1,6 +1,6 @@
 export default class HomeCtrl {
   constructor($scope, $state) {
-    // "ngInject";
+    "ngInject";
     this.title = 'A new workflow with angular,webpack and es6.';
 
     $scope.goAhead = function() {
@@ -8,4 +8,3 @@ export default class HomeCtrl {
     };
   }
 }
-HomeCtrl.$inject = ['$scope', '$state'];
