@@ -1,6 +1,6 @@
 // import styles
 import 'bootstrap/dist/css/bootstrap.css';
-import './scss/index.scss';
+import './app.scss';
 
 // import library
 import angular from 'angular';
