@@ -5,7 +5,7 @@ export default class ListCtrl {
     this.TOPICS = TOPICS;
 
     $scope.goDetail = function(topic) {
-      $state.go('detail', { id: topic.id });
+      $state.go('dashboards.detail', { id: topic.id });
     };
   }
 }

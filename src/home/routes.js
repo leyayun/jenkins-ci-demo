@@ -1,21 +1,20 @@
-routing.$inject = ['$stateProvider'];
 export default function routing($stateProvider) {
-  // "ngInject";
+  "ngInject";
 
   $stateProvider
-    .state('home', {
-      url: '/',
+    .state('dashboards.home', {
+      url: '/home',
       template: require('./templates/home.html'),
       controller: 'HomeCtrl',
       controllerAs: 'home'
     })
-    .state('list', {
+    .state('dashboards.list', {
       url: '/list',
       template: require('./templates/list.html'),
       controller: 'ListCtrl',
       controllerAs: 'list'
     })
-    .state('detail', {
+    .state('dashboards.detail', {
       url: '/detail/:id',
       template: require('./templates/detail.html'),
       controller: 'DetailCtrl',
