@@ -1,4 +1,4 @@
 export default () => {
-	"ngInject";
-	// console.log('--- run app ---');
+  "ngInject";
+  // console.log('--- run app ---');
 }

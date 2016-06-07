@@ -5,4 +5,4 @@ import '../InspiniaAdmin/css/style.min.css';
 
 // import library
 import 'angular';
-import 'angular-ui-router';
+import 'angular-ui-router';:x
