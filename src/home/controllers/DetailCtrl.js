@@ -1,11 +1,11 @@
 export default class DetailCtrl {
-  constructor($scope, TOPICS, $filter, $stateParams, user) {
+  constructor($scope, TOPICS, $filter, $stateParams, User) {
     "ngInject";
 
     $scope.topic = $filter('find')(TOPICS, Number($stateParams.id));
 
     this.loadMeizi = function() {
-      user.getUser().then((response) => {
+      User.getUser().then((response) => {
         this.user = response.data.results[0];
       });
     }

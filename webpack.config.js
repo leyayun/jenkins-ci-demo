@@ -23,7 +23,7 @@ module.exports = function makeWebpackConfig () {
    * Reference: http://webpack.github.io/docs/configuration.html#entry
    */
   config.entry = {
-    // vendor: './src/vendor.js',
+    vendor: './src/vendor.js',
     app: './src/app.js'
   };
 
