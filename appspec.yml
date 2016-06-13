@@ -1,0 +1,5 @@
+appid: $appid
+version: 1.0.0
+os: linux
+language: webresource
+apptype: web
