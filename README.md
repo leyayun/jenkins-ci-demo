@@ -18,15 +18,16 @@ $ npm start
 
 go to [http://localhost:8080](http://localhost:8080) in your browser.
 
-### About code
+### aws ec2 jenkins配置步骤
 
-[代码规范文档](http://wiki.ele.to:8090/pages/viewpage.action?pageId=16807568)
+1. 安装jenkins
+参考 http://sanketdangi.com/post/62715793234/install-configure-jenkins-on-amazon-linux
+
+1. 启动jenkins: `service jenkins start`
+
+1. 在浏览器打开 `http://<Elastic-IP>:8080`
+   第一次启动jenkins会需要根据审查的password解锁jenkins
 
 
 
 
-[发布系统接入文档](http://wiki.ele.to:8090/pages/viewpage.action?pageId=16552328)
-
-1. 添加webhook: `http://ci-api.tools.elenet.me/api/v1/webhook/gitlab/{appid}`, `appid`换成自己的`appid`（bind push event）
-2. 修改文件名`appid_build.yml` ，用你的_appid_替换文件名中的`appid`
-3. 修改`appspec.yml` 文件里的`$appid`为你的*appid*
