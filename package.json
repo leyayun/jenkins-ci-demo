@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && webpack --bail --progress --profile",
+    "build": "rm -rf dist && webpack --bail --progress --profile",
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
     "start": "npm run server"
   },
@@ -34,12 +34,11 @@
     "ng-annotate-loader": "^0.1.0",
     "ng-cache-loader": "0.0.15",
     "node-libs-browser": "^1.0.0",
-    "node-sass": "^3.7.0",
+    "node-sass": "^3.8.0",
     "null-loader": "^0.1.1",
     "open-browser-webpack-plugin": "0.0.2",
     "postcss-loader": "^0.8.0",
     "raw-loader": "^0.5.1",
-    "rimraf": "^2.5.1",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13",
