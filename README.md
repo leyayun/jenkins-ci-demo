@@ -1,9 +1,3 @@
-# Angular seed project
-
-`Angular 1.x` `webpack` `es6` 
-
-A complete, yet simple, starter for Angular 1.x using Webpack.
-
 
 ### Quick start
 
