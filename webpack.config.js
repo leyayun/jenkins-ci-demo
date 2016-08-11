@@ -2,7 +2,6 @@
 
 // Modules
 var webpack = require('webpack');
-var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -23,7 +22,6 @@ module.exports = function makeWebpackConfig () {
    * Reference: http://webpack.github.io/docs/configuration.html#entry
    */
   config.entry = {
-    vendor: './src/vendor.js',
     app: './src/app.js'
   };
 
@@ -70,36 +68,11 @@ module.exports = function makeWebpackConfig () {
   config.module = {
     preLoaders: [],
     loaders: [
-    {
-      test: /\.js$/,
-      loaders: isProd? ['ng-annotate', 'babel'] : ['babel'],
-      exclude: /node_modules/
-    }, 
-    {
-      test: /\.(css|scss|sass)$/,
-      loader: ExtractTextPlugin.extract('style', ['css', 'postcss', 'sass'])
-    }, 
-    {
-      test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      loader: 'file?name=assets/[name].[ext]'
-    }, 
-    {
-      test: /\.html$/,
-      loaders: ['ng-cache?prefix=[dir]/[dir]']
-    }]
+      { test: /\.css$/, loader: "style!css" }
+    ]
   };
 
 
-  /**
-   * PostCSS
-   * Reference: https://github.com/postcss/autoprefixer-core
-   * Add vendor prefixes to your css
-   */
-  config.postcss = [
-    autoprefixer({
-      browsers: ['last 2 version']
-    })
-  ];
 
   /**
    * Plugins
@@ -148,7 +121,6 @@ module.exports = function makeWebpackConfig () {
       // Copy assets from the public folder
       // Reference: https://github.com/kevlened/copy-webpack-plugin
       new CopyWebpackPlugin([
-        { from: __dirname + '/src/assets', to: __dirname + '/assets' },
         { from: __dirname + '/src/index.html' }
       ])
     )
