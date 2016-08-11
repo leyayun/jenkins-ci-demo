@@ -32,7 +32,7 @@
     "file-loader": "^0.8.4",
     "html-webpack-plugin": "^2.7.1",
     "ng-annotate-loader": "^0.1.0",
-    "ng-cache-loader": "0.0.15",
+    "ng-cache-loader": "0.0.17",
     "node-libs-browser": "^1.0.0",
     "node-sass": "^3.8.0",
     "null-loader": "^0.1.1",
