@@ -1,3 +1,3 @@
 require('./style.css');
 
-document.write("It works.sssss");
+document.write("Congratulation, It works.");
