@@ -14,7 +14,7 @@ go to [http://localhost:8080](http://localhost:8080) in your browser.
 
 ### aws ec2 jenkins配置步骤
 
-1. [安装jenkins参考](http://sanketdangi.com/post/62715793234/install-configure-jenkins-on-amazon-linux)
+1. [安装jenkins参考](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions)
 
 1. 启动jenkins: `service jenkins start`
 
