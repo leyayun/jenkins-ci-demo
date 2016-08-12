@@ -1,4 +1,10 @@
 body {
+	height: 400px;
 	color: red;
-	font-size: 24px;
+	font-size: 100px;
+	text-align: center;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	border: solid 4px red;
 }
